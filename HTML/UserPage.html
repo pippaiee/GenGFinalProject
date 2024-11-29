@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<html>
+    <head>
+        <title> USER  </title>
+</head>
+    <body>
+        <div class="topnav">
+            <a class="active" href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <div class="login-container">
+              <form id="loginform" action="/routes/authentication" method="POST">
+                <input type="text" placeholder="username" name="username">
+                <input type="password" placeholder="password" name="password">
+                <button type="submit"> Log In </button>
+              </form>
+            </div>
+          </div>
+        <div class="container">
+         <form action="/api/register" method="POST">
+         <label for="username">Username:</label>
+         <input type="text" id="username" name="username" placeholder="Enter your username">
+         <label for="password">Password:</label>
+         <input type="password" id="password" name="password" placeholder="Enter your password">
+         <button type="submit"> Register </button>
+        </form>
+        <script src="app.js"></script> <!-- Link to JavaScript file -->
+</body>
+</html>
